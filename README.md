@@ -71,6 +71,17 @@ due to bundler gem :
 bundle install
 ```
 
+### generate and add secret key base for puma :
+copy for your local env :
+```
+cp config/_secret.yml config/secret.yml
+```
+execute twice to generate 2 keys : 
+```
+rake secret
+```
+and replace the "here one" and "here two" with the two generated keys inside the previously copied config/secret.yml
+
 # Usefull command line 
 ### runtime :
 use zeus and guard gem (Present in Gemfile and loaded with bundle install)
