@@ -1,0 +1,25 @@
+footer.page-footer
+  .container
+    .row
+
+      .col.l6.s12
+        h5.white-text="Footer Content"
+        p.grey-text.text-lighten-4="Website made in Ruby."
+
+      .col.l4.s12
+        h5.white-text=I18n.t("footer.links")
+        ul
+          li
+            a.grey-text.text-lighten-3 href="https://github.com/madkira/"
+              = image_tag "icon/git/mark-github.svg"
+              = image_tag "icon/git/logo-github.svg"
+          li
+            a.grey-text.text-lighten-3 href="https://www.linkedin.com/in/rapha%C3%ABl-kumar-798a01b1"
+              = image_tag "icon/linkedin/Logo-2C-128px-TM.png", height: '16'
+
+
+  .footer-copyright
+    .container
+      ="© 2016 Copyright Text"
+      a.grey-text.text-lighten-4.right href="https://github.com/madkira/selfCV/blob/master/LICENSE"
+        ="MIT License"
