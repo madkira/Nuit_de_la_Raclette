@@ -82,6 +82,8 @@ rake secret
 ```
 and replace the "here one" and "here two" with the two generated keys inside the previously copied config/secret.yml
 
+* To be operationnal need to make a first migration (cf to database section)
+
 # Usefull command line 
 ### runtime :
 use zeus and guard gem (Present in Gemfile and loaded with bundle install)
