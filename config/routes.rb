@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root to: 'home#index'
-
+  get 'tags' =>'tags#index'
+  get 'tag/:id' =>'tags#show'
   scope "(:locale)" do
-  	
+
     get '/:locale' => 'home#index'
   end
 
