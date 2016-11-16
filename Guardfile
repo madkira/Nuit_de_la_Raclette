@@ -24,7 +24,7 @@ guard :rspec, :all_after_pass => false, :all_on_start => false, failed_mode: :ke
 end
 
 # guard 'cucumber', cli: '-t @current', bundler: true, :all_on_start => false, notification: false, all_after_pass: false  do
-guard 'cucumber', bundler: true, :all_on_start => false, notification: false, all_after_pass: false  do
+guard 'cucumber', :all_on_start => false, notification: false, all_after_pass: false  do
   watch(%r{^features/.+\.feature$})
   watch(%r{^features/support/.+$})          { 'features' }
   watch(%r{^features/step_definitions/(.+)_steps\.rb$}) { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'features' }
