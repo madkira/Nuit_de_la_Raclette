@@ -59,7 +59,7 @@ gem manager for project : (no sudo required)
 ```
 gem install bundler
 ```
-this command may failed but will give you witch requirement missing like libsqlite3
+this command may failed but will give you witch requirement missing like libsqlite3-dev and libpg-dev
 
 
 # IDE and Text Editor Personally tested for ruby
