@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'tags' =>'tags#index'
   get 'tag/:id' =>'tags#show'
   scope "(:locale)" do
+    get '/:locale/tags' =>'tags#index'
+    get '/:locale/tag/:id' =>'tags#show'
 
     get '/:locale' => 'home#index'
   end
