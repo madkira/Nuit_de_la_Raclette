@@ -17,7 +17,7 @@ Things you may want to cover:
 ### rbenv :
 ruby version manager
 ```
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+git git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
 Optionaly : 
 ```
