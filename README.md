@@ -17,15 +17,18 @@ Things you may want to cover:
 ### rbenv :
 ruby version manager
 ```
-git git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
 Optionaly : 
 ```
 cd ~/.rbenv && src/configure && make -C src
 ```
-then add to terminal profile : 
+then add to terminal profile (need to choose your shell profile): 
 ```
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.(bash_profile|.bashrc|.zshrc)
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.(bash_profile|bashrc|zshrc)
+echo 'export RUBYOPT="-KU"' >> ~/.(bash_profile|bashrc|zshrc)
+echo 'eval "$(rbenv init -)"' >> ~/.(bash_profile|bashrc|zshrc)
+
 ```
 add to rbenv install version helper :
 
