@@ -53,7 +53,7 @@ rbenv install 2.3.1
 
 to show all versions avaliable to install : 
 ```
-rbent install -l
+rbenv install -l
 ```
 
 
