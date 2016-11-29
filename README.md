@@ -80,7 +80,7 @@ bundle install
 ### generate and add secret key base for puma :
 copy for your local env :
 ```
-cp config/_secret.yml config/secret.yml
+cp config/_secrets.yml config/secrets.yml
 ```
 execute twice to generate 2 keys : 
 ```
