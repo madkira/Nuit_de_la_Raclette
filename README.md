@@ -56,6 +56,10 @@ to show all versions avaliable to install :
 rbenv install -l
 ```
 
+### Packages pré-requis
+```
+sudo apt-get install curl git-core build-essential zlib1g-dev libssl-dev libreadline6-dev gem libyaml-dev libpq-dev libsqlite3-dev
+```
 
 ### bundler :
 gem manager for project : (no sudo required)
