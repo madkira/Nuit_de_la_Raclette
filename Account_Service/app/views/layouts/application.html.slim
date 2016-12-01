@@ -1,0 +1,20 @@
+doctype 5
+html
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=devise-width, initial-scale=1"
+    title = "SelfCV"
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+
+
+  body
+    = render "layouts/header"
+    #flash-messages
+    - flash.map do |type, message|
+      = alert_box message, context: type, dismissible: true, id: 'alert'
+    main
+      = yield
+    = render "layouts/footer"
+

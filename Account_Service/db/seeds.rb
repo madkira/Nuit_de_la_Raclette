@@ -13,3 +13,4 @@ end
 
 tag_ruby = Tag.create!(name:'ruby')
 tag_cpp = Tag.create!(name:'c++')
+user = Organisation.create!(email: 'a@a.a', password: 'aaaaaa', last_name: 'Nom', first_name: 'Prenom', phone_number: 01234, role: 0)
