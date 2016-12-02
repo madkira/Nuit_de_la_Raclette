@@ -11,9 +11,6 @@ html
 
   body
     = render "layouts/header"
-    #flash-messages
-    - flash.map do |type, message|
-      = alert_box message, context: type, dismissible: true, id: 'alert'
     main
       = yield
     = render "layouts/footer"

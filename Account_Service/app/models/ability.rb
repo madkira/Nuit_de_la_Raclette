@@ -10,9 +10,9 @@ class Ability
       can :access, :rails_admin
       can :dashboard
 
-      can :update, Tag
-      can :create, Tag
-      can :read, Tag
+      can :update, Organisation, :id => user.id
+      can :create, Organisation
+      can :read, Organisation
     end
 
 

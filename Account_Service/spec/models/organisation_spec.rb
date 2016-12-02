@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Organisation, type: :model do
   it 'should have a valid factory' do
-    expect(FactoryGirl.build(:staff)).to be_valid
+    expect(FactoryGirl.build(:organisation)).to be_valid
   end
 
   it { is_expected.to validate_presence_of :first_name}

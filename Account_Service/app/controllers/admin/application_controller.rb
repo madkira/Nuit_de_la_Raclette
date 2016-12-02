@@ -20,7 +20,7 @@ module Admin
     end
 
     def current_user
-      current_staff
+      current_organisation
     end
 
     # include UrlHelper

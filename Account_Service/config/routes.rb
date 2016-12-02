@@ -2,12 +2,10 @@ Rails.application.routes.draw do
   devise_for :organisations
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root to: 'home#index'
-  get 'tags' =>'tags#index'
-  get 'tag/:id' =>'tags#show'
+  get 'connect' =>redirect("organisations/sign_in")
+  get 'compte/:login/:passwd' => 'organisations#true'
   scope "(:locale)" do
-    get '/:locale/tags' =>'tags#index'
-    get '/:locale/tag/:id' =>'tags#show'
-
+    get '/:locale/connect' =>redirect("/:locale/organisations/sign_in")
     get '/:locale' => 'home#index'
   end
 
